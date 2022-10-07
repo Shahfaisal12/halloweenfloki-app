@@ -59,7 +59,7 @@ const Header = () => {
                   FAQ
                 </a>
               </li>
-              <li>
+              <li className="nav-item">
                 {/* <a target="_blank" rel="" href="/">MINT FLOH RAFFLE NFT</a> */}
                 <Button className="btn-header">MINT FLOH RAFFLE NFT</Button>
                 </li>

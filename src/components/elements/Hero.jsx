@@ -15,7 +15,7 @@ const Hero = () => {
   return (
     <div className="hero-section py-5" id="hero"> {/* pb-5 pt-3 pt-md-0 */ }
       <div className="container">
-        <div className="row mt-0 mt-md-0 "> {/* mt-0 mt-md-0 */}
+        <div className="row mt-5"> {/* mt-0 mt-md-0 */}
           <div className="col-md-6">
             <div className="editable-text mt-5">
               <h1 className="fw-bold display-3 text-white" style={{fontFamily:'Nosifer'}}>Halloween Floki</h1>
