@@ -46,11 +46,8 @@ const OurDocument = () => {
                   <Typography variant="h4" className="fw-bold text-white">
                     Read Our Documents
                   </Typography>
-                  <Stack
-                    direction="row"
-                    spacing={6}
-                    className="text-white fw-bold my-5 flex-wrap"
-                  >
+
+                  <div class="d-flex flex-wrap justify-content-start text-white fw-bold my-5">
                     <Box className="d-flex align-items-center mt-2 mt-md-0">
                       <span className="bg-marks">
                         <ImCheckmark className="text-black" />
@@ -69,7 +66,7 @@ const OurDocument = () => {
                       </span>
                       <span className="mx-4">Whitepaper</span>
                     </Box>
-                  </Stack>
+                  </div>
 
                   <Space wrap>
                     <Dropdown overlay={menu}>

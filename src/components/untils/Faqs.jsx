@@ -1,5 +1,5 @@
 import { Stack } from "@mui/material";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 // import React, { useEffect, useState } from "react";
 import Faq from "react-faq-component";
@@ -49,12 +49,35 @@ const config = {
     // tabFocus: true
     animate: true,
     arrowIcon: "V",
-    openOnload: 1,
+    openOnload: 0,
+    defaultExpanded:'defaultExpandedRows',
     expandIcon: <AiFillCaretRight />,
     collapseIcon: <BsFillCaretUpFill />,
 };
 
+
 const Faqs = () => {
+
+  const [rows, setRowsOption] = useState(null);
+
+useEffect(() => {
+    if (rows) {
+        setTimeout(() => {
+            rows[0].expand();
+        }, 500);
+
+        setTimeout(() => {
+            rows[0].close();
+        }, 5000000000);
+
+        setTimeout(() => {
+            rows[0].scrollIntoView();
+            // rows[0].scrollIntoView(true);
+        }, 100000);
+    }
+}, [rows]);
+
+
   return (
     <div className="faq-section py-5">
       <div className="container">
@@ -71,13 +94,14 @@ const Faqs = () => {
                 data={data}
                 styles={styles}
                 config={config}
+                getRowOptions={setRowsOption}
             />
         </div>
           </div>
           <div className="col-md-5">
-            <div className="faq-img">
+            <div className="faq-img mt-3 mt-md-0">
               <img
-                className="img-fluid"
+                className="img-fluid d-flex justify-content-center"
                 src="https://halloweenfloki.co/wp-content/uploads/2022/04/question.png"
                 alt=""
               />
