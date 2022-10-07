@@ -14,12 +14,21 @@
         color: #745f98;
       }
     }
+    .btn-header{
+      border-radius: 20px;
+      border: 2px solid #000000;
+       color: #FFFFFF;
+       &:hover{
+        color: #745f98;
+       } 
+    } 
   }
 }
 
 @media only screen and (max-width: 600px) {
   .navbar-nav {
     background-color: #333;
+    padding: 15px;
 
     .nav-item {
       padding-left: 10px;

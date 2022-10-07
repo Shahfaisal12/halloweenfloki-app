@@ -61,7 +61,7 @@ const Header = () => {
               </li>
               <li>
                 {/* <a target="_blank" rel="" href="/">MINT FLOH RAFFLE NFT</a> */}
-                <Button sx={{ borderRadius: '20px', border:'2px solid #000000', color:'white' }}>MINT FLOH RAFFLE NFT</Button>
+                <Button className="btn-header">MINT FLOH RAFFLE NFT</Button>
                 </li>
             </ul>
           </div>
