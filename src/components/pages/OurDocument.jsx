@@ -12,15 +12,15 @@ const menu = (
   <Menu
     items={[
       {
-        label: "1st menu item",
+        label: "KYC",
         key: "1",
       },
       {
-        label: "2nd menu item",
+        label: "Audit",
         key: "2",
       },
       {
-        label: "3rd menu item",
+        label: "Whitepaper",
         key: "3",
       },
     ]}

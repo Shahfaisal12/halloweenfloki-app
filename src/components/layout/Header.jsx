@@ -9,7 +9,7 @@ const Header = () => {
         <div className="container">
           <a className="navbar-brand p-0" href="/">
             <img className="img-fluid"
-              src="	https://halloweenfloki.co/wp-content/uploads/2022/08/FLOH_Logo-removebg-preview.png"
+              src="https://halloweenfloki.co/wp-content/uploads/2022/08/FLOH_Logo-removebg-preview.png"
               style={{ width: "90px" }}
               alt="logo"
             />
